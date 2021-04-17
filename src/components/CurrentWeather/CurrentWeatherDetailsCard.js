@@ -15,7 +15,7 @@ const CurrentWeatherCard = ({dt, feelslike, humidity, wind_speed, uvi}) => {
                     <h3><FaTint /> Humidity</h3>
                     <div>{humidity}%</div>
                 </div>
-                <div><h3><FaWind /> Wind speed</h3>
+                <div><h3><FaWind /> Wind Speed</h3>
                     <div>{wind_speed} MPH</div>
                 </div>
                 <div><h3><FaSun /> UV Index</h3> 
