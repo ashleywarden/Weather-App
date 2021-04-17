@@ -1,0 +1,59 @@
+.hourly-weather-container{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  height: 2000px;
+  overflow: auto;
+}
+
+.hourly-weather-card{
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8); 
+  height: auto;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  color: black;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  font-size: 1.4em;
+}
+
+.hourly-weather-card p:first-of-type {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 800px) {
+
+.hourly-weather-container{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: flex-start;
+    height: auto;
+}
+
+.hourly-weather-card-container{
+  padding: 10px;
+  height: 350px;
+}
+
+.hourly-weather-card{
+  border-radius: 15px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  padding: 10px;
+}
+
+}
