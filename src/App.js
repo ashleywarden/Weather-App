@@ -5,7 +5,7 @@ import Result from './components/CurrentWeather/CurrentWeatherResult'
 import Tab from './components/Tab/Tab'
 import Title from './components/AppTitle/Title'
 import { useState, useEffect } from 'react'
-import { API_BASE_URL, API_KEY } from './apis/config.js'
+//import { API_BASE_URL, API_KEY } from './apis/config.js'
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
   //Fetch the weather data
   useEffect((e) => {
     const getWeatherData = async () => {
-      fetch(`${API_BASE_URL}data/2.5/onecall?lat=${latLng.lat}&lon=${latLng.lng}&exclude=minutely,alerts&units=metric&appid=${API_KEY}`)
+      fetch(`${process.env.REACT_APP_API_BASE_URL}data/2.5/onecall?lat=${latLng.lat}&lon=${latLng.lng}&exclude=minutely,alerts&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((dataObj) => setWeatherData(dataObj))
     }
