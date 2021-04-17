@@ -5,7 +5,6 @@ import Result from './components/CurrentWeather/CurrentWeatherResult'
 import Tab from './components/Tab/Tab'
 import Title from './components/AppTitle/Title'
 import { useState, useEffect } from 'react'
-//import { API_BASE_URL, API_KEY } from './apis/config.js'
 
 
 const App = () => {
