@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 400px;
+    width: 100%;
     margin: auto;
     justify-content: center;
 }
