@@ -4,7 +4,7 @@ import './Hourly.css'
 
 const HourlyWeatherCard = ({dt, temp, main, description, icon, humidity}) => {
 
-    const hour = moment(dt).format('h:mm:ss a')
+    const hour = moment(dt).format('h:mm a')
 
     return (
             <div className="hourly-weather-card">
